@@ -1,7 +1,7 @@
 module.exports.handler = (event, ctx, done) => {
   const todos = [
     {id: 1, name: 'clean up', status: 'open'},
-    {id: 1, name: 'cook', status: 'done'}
+    {id: 2, name: 'cook', status: 'done'}
   ]
   done(null, {
     statusCode: 200,

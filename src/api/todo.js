@@ -1,4 +1,11 @@
 module.exports.handler = (event, ctx, done) => {
+  console.log('EVENT: ================================================================================================  ');
+  console.log(JSON.stringify(event, null, 2));
+
+  console.log('CONTEXT:================================================================================================  ');
+
+  console.log(JSON.stringify(ctx, null, 2));
+
   done(null, {
     statusCode: 200,
     body: JSON.stringify({data: {
